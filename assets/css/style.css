@@ -351,7 +351,7 @@ html{
     font-weight: 800;
 }
 .notification-deleteform{
-    display: flex;
+    display: none;
 }
 .notification-changeform{
     display: none;
