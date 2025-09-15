@@ -121,8 +121,9 @@
                         <div class="notification-about">
                             <div class="notification-block">
                                 <div class="notification-person">Lâm Chí Nguyện</div>
+                                <div class="notification-title">Test Title</div>
                                 <p class="notification-content">
-                                    Test
+                                    Test Content
                                 </p>
                             </div>
                         </div>
@@ -134,8 +135,9 @@
                         <div class="notification-about">
                             <div class="notification-block">
                                 <div class="notification-person">Thái Đinh Kim Chi</div>
+                                <div class="notification-title">Test Title</div>
                                 <p class="notification-content">
-                                    Test
+                                    Test Content
                                 </p>
                             </div>
                         </div>
@@ -147,8 +149,9 @@
                         <div class="notification-about">
                             <div class="notification-block">
                                 <div class="notification-person">Phạm Quỳnh Mai Trinh</div>
+                                <div class="notification-title">Test Title</div>
                                 <p class="notification-content">
-                                    Test
+                                    Test Content
                                 </p>
                             </div>
                         </div>
@@ -160,8 +163,9 @@
                         <div class="notification-about">
                             <div class="notification-block">
                                 <div class="notification-person">Lê Huỳnh Đạt Huy</div>
+                                <div class="notification-title">Test Title</div>
                                 <p class="notification-content">
-                                    Test
+                                    Test Content
                                 </p>
                             </div>
                         </div>
@@ -171,7 +175,7 @@
                 <div class="notification-button">
                     <button class="add-button">Thêm thông báo</button>
                     <button class="delete-button">Xóa thông báo</button>
-                    <button class="fix-button">Sửa thông báo</button>
+                    <button class="change-button">Sửa thông báo</button>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -185,15 +189,15 @@
             </div>
         </div>
     </div>
-    <div class="notification-addform">
-        <div class="addform-container">
-            <div class="addform-closebutton">
-                <button class="close-button">CLOSE</button>
+    <div class="notification-addform form-function">
+        <div class="addform-container form-container">
+            <div class="addform-closebutton form-closebutton">
+                <button class="close-button closebutton close-add-form">CLOSE</button>
             </div>
-            <div class="addform-heading">
+            <div class="addform-heading form-heading">
                 Thêm thông báo
             </div>
-            <form action="" class="form">
+            <div class="form-body">
                 <div class="form-check">
                     <div class="title">Thông báo với tư cách</div>
                     <div class="checkbox">
@@ -224,21 +228,112 @@
                         <textarea name="notification" class="notificaton-content text-input" rows="5" cols="20" placeholder="Nội dung thông báo"></textarea>
                     </div>
                 </div>
-                <div class="addform-button">
-                    <button>Thêm</button>
-                </div>
-            </form>
+            </div>
+            <div class="addform-button active-function-button">
+                <button>Thêm</button>
+            </div>
+        </div>
+    </div>
+    <div class="notification-deleteform form-function">
+        <div class="deleteform-container form-container">
+            <div class="deleteform-closebutton form-closebutton">
+                <button class="close-button closebutton close-delete-form">CLOSE</button>
+            </div>
+            <div class="deleteform-heading form-heading">
+                Xóa thông báo
+            </div>
+            <div class="form-body">
+                <div class="body-heading heading">Danh sách Thông báo</div>
+                <table class="notification-list">
+                    <tr class="table-item table-heading">
+                        <th class="table-title check-button">Chọn</th>
+                        <th class="table-title stt-element">STT</th>
+                        <th class="table-title name-element">Tên</th>
+                        <th class="table-title title-element">Tiêu đề</th>
+                    </tr>  
+                    <tr class="table-item table-body">
+                        <td class="table-data check-button"><input type="checkbox" name="list-item"></th>
+                        <td class="table-data stt-element">Test</th>
+                        <td class="table-data name-element">Test</th>
+                        <td class="table-data title-element">Test</th>
+                    </tr>
+                    <tr class="table-item table-body">
+                        <td class="table-data check-button"><input type="checkbox" name="list-item"></th>
+                        <td class="table-data stt-element">Test</th>
+                        <td class="table-data name-element">Test</th>
+                        <td class="table-data title-element">Test</th>
+                    </tr>
+                    <tr class="table-item table-body">
+                        <td class="table-data check-button"><input type="checkbox" name="list-item"></th>
+                        <td class="table-data stt-element">Test</th>
+                        <td class="table-data name-element">Test</th>
+                        <td class="table-data title-element">Test</th>
+                    </tr> 
+                </table>
+            </div>
+            <div class="deleteform-button active-function-button">
+                <button>Xóa</button>
+            </div>
+        </div>
+    </div>
+    <div class="notification-changeform form-function">
+        <div class="changeform-container form-container">
+            <div class="changeform-closebutton form-closebutton">
+                <button class="close-button closebutton close-change-form">CLOSE</button>
+            </div>
+            <div class="changeform-heading form-heading">
+                Sửa thông báo
+            </div>
+           <div class="form-body">
+                <div class="body-heading heading">Danh sách Thông báo</div>
+                <table class="notification-list">
+                    <tr class="table-item table-heading">
+                        <th class="check-button">Chọn</th>
+                        <th class="table-title stt-element">STT</th>
+                        <th class="table-title name-element">Tên</th>
+                        <th class="table-title title-element">Tiêu đề</th>
+                    </tr>  
+                    <tr class="table-item table-body">
+                        <td class="table-data check-button"><input type="radio" name="list-item"></th>
+                        <td class="table-data stt-element">Test</th>
+                        <td class="table-data name-element">Test</th>
+                        <td class="table-data title-element">Test</th>
+                    </tr> 
+                    <tr class="table-item table-body">
+                        <td class="table-data check-button"><input type="radio" name="list-item"></th>
+                        <td class="table-data stt-element">Test</th>
+                        <td class="table-data name-element">Test</th>
+                        <td class="table-data title-element">Test</th>
+                    </tr> 
+                </table>
+           </div>
+           <div class="changeform-button active-function-button">
+            <button>Lưu</button>
+        </div>
         </div>
     </div>
 </body>
     <script>
+        //Đóng và tắt notification function form
         document.querySelector('.add-button').addEventListener('click', function() {
             document.querySelector('.notification-addform').style.display = 'flex';
         });
-
-        document.querySelector('.close-button').addEventListener('click', function() {
+        document.querySelector('.delete-button').addEventListener('click', function() {
+            document.querySelector('.notification-deleteform').style.display = 'flex';
+        });
+        document.querySelector('.change-button').addEventListener('click', function() {
+            document.querySelector('.notification-changeform').style.display = 'flex';
+        });
+        document.querySelector('.close-add-form').addEventListener('click', function() {
             document.querySelector('.notification-addform').style.display = 'none';
         });
+        document.querySelector('.close-delete-form').addEventListener('click', function() {
+            document.querySelector('.notification-deleteform').style.display = 'none';
+        });
+        document.querySelector('.close-change-form').addEventListener('click', function() {
+            document.querySelector('.notification-changeform').style.display = 'none';
+        });
+        //Auto fill tên người gửi thông báo
         const lecturedNotificationButton = document.querySelector('.lectured-check');
         const staffNotificationButton = document.querySelector('.staff-check')
         const unionNotificationButton = document.querySelector('.union-check')

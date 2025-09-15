@@ -41,7 +41,7 @@ html{
     padding-bottom: 36px;
 }
 .header{
-    background: linear-gradient(160deg, darkblue, lightyellow);
+    background: linear-gradient(180deg, darkblue, rgb(0, 191, 255));
     height: 140px;
     position: fixed;
     top: 0;
@@ -70,13 +70,13 @@ html{
 .name-major{
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(226, 223, 255); 
+    color: rgb(143, 229, 255); 
     font-weight: 650;
 }
 .name-school{
     font-size: 30px;
     font-weight: 500;
-    color: rgb(246, 255, 207);
+    color: rgb(241, 255, 112);
 }
 .body{
     margin-top: 140px;
@@ -224,9 +224,15 @@ html{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 4px;
 }
-.notification-content{
+.notification-content, .notification-title{
     font-size: 20px;
     line-height: 1.4;
+}
+.notification-title{
+    padding-left: 5px;
+}
+.notification-content{
+    padding-left: 10px;
 }
 .footer{
     position: relative;
@@ -249,7 +255,7 @@ html{
 .footer-email{
     color: black;
 }
-.notification-addform{
+.form-function{
     display: none;
     position: fixed;
     top: 0;
@@ -258,7 +264,7 @@ html{
     left: 0;
     background-color: rgba(0, 0, 0, 0.568);
 }
-.addform-container{
+.form-container{
     position: relative;
     background: linear-gradient(180deg, darkblue, lightblue);
     margin: 5% 20%;
@@ -267,10 +273,10 @@ html{
     border-radius: 10px;
     width: 100%;
 }
-.addform-container .form{
+.form-body{
     margin: 0px 120px;
 }
-.addform-heading{
+.form-heading{
     text-align: center;
     border-radius: 10px;
     background-color: rgb(0, 73, 122);
@@ -282,8 +288,9 @@ html{
     margin-bottom: 12px;
     color: rgb(255, 255, 255);
     width: 100%;
+    box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.486);
 }
-.addform-container .close-button{
+.form-container .closebutton{
     position: absolute;
     top: 0;
     right: 0;
@@ -294,7 +301,7 @@ html{
     border: 0px;
     color: rgb(0, 0, 0);
 }
-.addform-container .close-button:hover{
+.form-container .closebutton:hover{
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
 }
@@ -326,11 +333,11 @@ html{
     border: 2px solid lightblue;
     border-radius: 10px;
 }
-.addform-button{
+.active-function-button{
     text-align: center;
     margin-top: 24px;
 }
-.addform-button button{
+.active-function-button button{
     padding: 12px 24px;
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -338,12 +345,70 @@ html{
     color: white;
     border-radius: 10px;
 }
-.addform-button button:hover{
+.active-function-button button:hover{
     background-color: white;
     color: darkblue;
     font-weight: 800;
 }
-
+.notification-deleteform{
+    display: flex;
+}
+.notification-changeform{
+    display: none;
+}
+.notification-list{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    background-color: rgb(37, 37, 160);
+}
+.form-body .body-heading{
+    text-align: center;
+    color: wheat;
+}
+.deleteform-container .form-body,
+.changeform-container .form-body{
+    max-height: 500px;
+    min-height: 500px;
+    overflow-y: scroll;
+}
+.table-title{
+    text-align: center;
+    border: 1px solid white;
+    padding: 8px;
+}
+.table-item .check-button{
+    text-align: center;
+    width: 10%
+}
+.table-item .table-data.check-button{
+    transform: scale(1.5);
+}
+.table-item{
+    overflow: scroll;
+}
+.stt-element{
+    width: 10%;
+}
+.name-element{
+    width: 30%;
+}
+.table-data{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table-item:nth-child(even){
+    background-color: #0c00af; /* Tô màu hàng chẵn */
+}
 
 
 
