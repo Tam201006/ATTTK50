@@ -154,7 +154,40 @@ html{
     float: left;
     width: calc(100%/5);
 }
-
+.notification{
+    background-color: darkblue;
+    padding: 48px 120px;
+}
+.notification > .heading{
+    text-align: center;
+    color: white;
+    margin-bottom: 24px;
+}
+.notification .content{
+    text-align: center;
+}
+.notification .content .item{
+    border: 3px solid rgb(4, 0, 255);
+    width: calc(100%/3);
+    float: left;
+    min-height: 100px;
+}
+.notification .content .heading{
+    font-size: 25px;
+    color: lightyellow;
+    margin: 12px 0px;
+}
+.notification-button{
+    margin-top: 12px;
+    text-align: center;
+}
+.notification-button button{
+    padding: 12px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 17, 255);
+    margin: 12px 12px;
+}
 .footer{
     position: relative;
     bottom: 0;
