@@ -182,6 +182,9 @@ html{
     min-height: 100px;
     margin: 12px;
 }
+.notification .content .other.item{
+    float: none;
+}
 .notification .content .heading{
     font-size: 25px;
     color: lightyellow;
@@ -305,7 +308,7 @@ html{
 .form-check .checkbox{
     float: left;
     font-size: 25px;
-    width: calc(100%/3);
+    width: calc(100%/4);
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 
