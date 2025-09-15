@@ -1,0 +1,103 @@
+@media (max-width: 1622px){
+    .class .lectured{
+        margin-bottom: 36px;
+    }
+    .class{
+        padding: 48px 0px;
+    }
+    .class .staff{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 1241px)  {
+    .header{
+        background: linear-gradient(45deg, darkblue, blue);
+    }
+    .header .name-major{
+        color: rgb(255, 255, 255);
+    }
+    .header .name-school{
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+    .about .content{
+        padding: 0;
+    }
+    .class .staff .person{
+        float: none;
+        width: 100%;
+    }
+    .class .staff .officer{
+        float: left;
+        width: calc(100%/3);
+    }
+    .class .union{
+        width: 100%;
+    }
+    .class .union .person{
+        float: none;
+        width: 100%;
+        margin-bottom: 36px;
+    }
+    .class .union .leader{
+        width: calc(100%/2);
+        float: left;
+        text-align: center;
+    }
+    .class .union .officer{
+        float: left;
+        width: calc(100%/3);
+    }
+}
+@media (max-width: 1063px){
+    .header{
+        float: none;
+        height: auto;
+        display: block;
+    }
+    .header .logo-major{
+        width: 100%;
+        text-align: center;
+    }
+    .header .logo{
+        padding: 0;
+    }
+    .header-content{
+        float: none;
+        padding: 0px 0px;
+        padding-bottom: 24px;
+    }
+    .header .name-major, .header .name-school{
+        text-align: center;
+    }
+}
+@media (max-width: 881px){
+    .header{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .header .logo{
+        height: 100px;
+        padding: 12px 0px;
+    }
+    .header .logo-school img{
+        height: 50px;
+    }
+    .header-content{
+        padding: 12px 12px;
+    }
+    .header-content p{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .body{
+        margin: 0;
+    }
+    .about .content{
+        width: 100%;
+        padding: 0px 5px;
+    }
+}
