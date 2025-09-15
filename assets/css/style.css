@@ -163,14 +163,24 @@ html{
     color: white;
     margin-bottom: 24px;
 }
+.notification .content .heading{
+    height: 45px;
+    border-bottom: 2px solid rgb(0, 238, 255);
+}
+.notification .content .heading-content{
+    margin: 12px;
+}
 .notification .content{
     text-align: center;
+    display: flex;
 }
 .notification .content .item{
-    border: 3px solid rgb(4, 0, 255);
-    width: calc(100%/3);
+    border: 3px solid rgb(71, 96, 240);
+    border-radius: 10px;
     float: left;
+    width: calc(100%/3);
     min-height: 100px;
+    margin: 12px;
 }
 .notification .content .heading{
     font-size: 25px;
@@ -187,6 +197,33 @@ html{
     color: rgb(255, 255, 255);
     background-color: rgb(0, 17, 255);
     margin: 12px 12px;
+    border: 0px;
+    border-radius: 5px;
+}
+.notification-button button:hover{
+    background-color: rgb(0, 195, 255);
+    color: rgb(0, 13, 85);
+    font-weight: 500;
+}
+.notification-about{
+    text-align: left;
+    margin: 12px 48px;
+}
+.notification-block{
+    border-bottom: 2px dashed rgb(255, 251, 0);
+    color: white;   
+}
+.notification-content{
+    margin-bottom: 8px;
+}
+.notification-person{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 4px;
+}
+.notification-content{
+    font-size: 20px;
+    line-height: 1.4;
 }
 .footer{
     position: relative;
@@ -209,5 +246,101 @@ html{
 .footer-email{
     color: black;
 }
+.notification-addform{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+.addform-container{
+    position: relative;
+    background: linear-gradient(180deg, darkblue, lightblue);
+    margin: 5% 20%;
+    padding-bottom: 120px;
+    text-align: left;
+    border-radius: 10px;
+    width: 100%;
+}
+.addform-container .form{
+    margin: 0px 120px;
+}
+.addform-heading{
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(0, 73, 122);
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding: 12px;
+    margin-bottom: 12px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+.addform-container .close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 2px;
+    background-color: rgb(252, 252, 252);
+    border: 0px;
+    color: rgb(0, 0, 0);
+}
+.addform-container .close-button:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.addform-container .title{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+.form-check .checkbox{
+    float: left;
+    font-size: 25px;
+    width: calc(100%/3);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.form-check .checkbox input{
+    margin-right: 12px;
+}
+.form-check .checkbox .content{
+    color: rgb(253, 244, 115);
+}
+.form-content .text-input{
+    width: 100%;
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+}
+.addform-button{
+    text-align: center;
+    margin-top: 24px;
+}
+.addform-button button{
+    padding: 12px 24px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+}
+.addform-button button:hover{
+    background-color: white;
+    color: darkblue;
+    font-weight: 800;
+}
+
+
 
 
